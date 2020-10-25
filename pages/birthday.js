@@ -7,7 +7,6 @@ export default function Birthday(props) {
   const { data, error } = useSwr('/api/birthdays/una', fetcher)
 
   if (error) return <div>Failed to load users</div>
-  if (!data) return <div>Loading...</div>
 
   const hello = (data) => {
     if(data.birthday.length > 0 ){
