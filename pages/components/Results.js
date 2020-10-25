@@ -8,7 +8,6 @@ export default function Results(props) {
   const { data, error } = useSwr('/api/birthdays/'+props.name, fetcher)
 
   if (error) return <div>Failed to load users</div>
-  if (!data) return <div>Loading...</div>
 
   const hello = (data) => {
     // console.log("I made it to say hello");
