@@ -25,7 +25,8 @@ export default function Birthday(props) {
 
   return (
     <>
-    {hello(data)}
+    <div class="background">{hello(data)}</div>
+    
     </>
   )
 }

@@ -35,10 +35,10 @@ export default function Home() {
                 </span>
             </>
         } else {
-          return  <div class="background">
+          return  <>
                 <div className={styles.returntosearch} onClick={backtosearch}><button>&lt; return to search</button></div>
                 <BirthdayComponet name={input} />
-            </div>
+            </>
         }
     }
     return (
